@@ -21,8 +21,8 @@ td {border-radius: 10px;}
     justify-content: center;
     align-items: center;
     grid-gap: 12px;
-    -webkit-box-shadow: 0 0 20px 0 #19BAFF;
-    box-shadow: 0 0 20px 0 #19BAFF;
+    -webkit-box-shadow: 0 0 20px 0 #22972e;
+    box-shadow: 0 0 20px 0 #22972e;
 }
 
 h5{
@@ -32,3 +32,7 @@ h5{
 
 .card-insta {background: linear-gradient(84.92deg, #FFC900 0%, #FF6711 30.51%, #FF1855 71.88%, #D300C5 100%);}
 .card-insta h5{color: #fff !important;}
+
+.blue.darken-1 {
+    background-color: #22972e !important;
+}
