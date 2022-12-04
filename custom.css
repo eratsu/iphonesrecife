@@ -5,6 +5,13 @@
     border: none;
 }
 
+.separar-big{
+    margin-top: 35px;
+    margin-bottom: 8px;
+    display: block;
+    border: none;
+}
+
 .card {border-radius: 10px;}
 td {border-radius: 10px;}
 
@@ -22,3 +29,6 @@ h5{
     margin: 0.1rem 0 0.1rem 0;
     font-size: 1.34rem;
 }
+
+.card-insta {background: linear-gradient(84.92deg, #FFC900 0%, #FF6711 30.51%, #FF1855 71.88%, #D300C5 100%);}
+.card-insta h5{color: #fff !important;}
