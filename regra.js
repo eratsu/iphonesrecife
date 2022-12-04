@@ -3,7 +3,7 @@ function calculo(val1, val2) {
   valor_entrada = val2;
 
   var taxas = [4.00, 5.00, 6.00, 7.00, 8.00, 8.50, 9.00, 10.00, 11.00, 11.50, 12.00, 13.00, 14.00, 14.50, 15.00, 16.00, 17.00, 18.00];
-  let taxa_debito = 1.8;
+  let taxa_debito = 1.59;
   var valor_parcelas = [];
   var valor_total = [];
 

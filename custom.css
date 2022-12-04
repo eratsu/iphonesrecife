@@ -4,3 +4,21 @@
     display: block;
     border: none;
 }
+
+.card {border-radius: 10px;}
+td {border-radius: 10px;}
+
+.card-simular{
+    display: block; font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 12px;
+    -webkit-box-shadow: 0 0 20px 0 #19BAFF;
+    box-shadow: 0 0 20px 0 #19BAFF;
+}
+
+h5{
+    margin: 0.1rem 0 0.1rem 0;
+    font-size: 1.34rem;
+}
