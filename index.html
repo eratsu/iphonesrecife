@@ -30,6 +30,13 @@
       gtag('config', 'G-LQBLK6JPC8');
     </script>
 
+    <style>
+      tbody{display: grid; grid-gap: 10px;}
+      .card{display: flex; justify-content: center; align-items: center; margin: 0;}
+      .card-insta {margin-top: 10px !important; height: 55px;}
+      .card-fixo {margin-top: 30px !important; height: 55px;}
+    </style>
+
 
 </head>
 <body class="grey lighten-3">
@@ -68,96 +75,28 @@
         <h6 class="center-align"> <b> Clique e fale conosco </b> </h6>
         <h6 class="center-align">Seg a Sex 9h às 18h e Sábado das 9h às 15h</h6>
         <br />
-        <table>
+
+
+        <table id="contacts-table">
           <tbody>
-
-
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/+5581998788602" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Rayssa');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 99878.8602</b> - Rayssa </h5> </a>
-              </td>
-            </tr>
-
-           
-            <tr class="separar"></tr>
-
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/message/JTCXARURF4YHF1" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Jacques');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 97120.8800</b> - Jacques </h5> </a>
-              </td>
-            </tr>
-
-            <tr class="separar"></tr>
-
-
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/+5581997251099" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Flora');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 99725.1099</b> - Flora  </h5> </a>
-              </td>
-            </tr>
-
-
-            <tr class="separar"></tr>
-
-
-
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/+5581993707571" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Mateus');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 99370.7571</b> - Mateus </h5> </a>
-              </td>
-            </tr>
-
-           
-            <tr class="separar"></tr>
-
-
-
-
-            
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/+5581993539678" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Bruno');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 99353.9678</b> - Bruno </h5> </a>
-              </td>
-            </tr>
-
-
-            <tr class="separar-big"></tr>
-
-
-            
-
-            <tr class="card">
-              <td class="center-align">
-                <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>81 99695.3666</b> - Carlos </h5> </a>
-              </td>
-            </tr>
-
-
-            
-            <tr class="separar"></tr>
-
-            
-
-            
-
-           
-           
-
-            
-
-            <tr class="card card-insta">
-              <td class="center-align">
-                <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Instagram');"> <h5 class="black-text"> <i class="fa fa-instagram" aria-hidden="true"></i> Voltar para @IphonesRecifeOficial </h5> </a>
-              </td>
-            </tr>
-
+            <!-- Adicione as linhas da tabela aqui -->
           </tbody>
         </table>
+
+
+        <div class="card card-fixo">
+          <div class="center-align">
+            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Consultor Carlos</b> </h5> </a>
+          </div>
+        </div>
+
+        <div class="card card-insta">
+          <div class="center-align">
+            <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Instagram');"> <h5 class="black-text"> <i class="fa fa-instagram" aria-hidden="true"></i> Voltar para @IphonesRecifeOficial </h5> </a>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
@@ -168,5 +107,79 @@
 
      <!-- FontAwesome JavaScript -->
     <script src="https://use.fontawesome.com/1155ed6c0a.js"></script>
+
+    <script>
+
+      // Crie um array com os objetos de contato
+const contacts = [
+  {
+    name: "Rayssa",
+    pronome: "Consultora",
+    phone: "+5581998788602",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Rayssa');",
+  },
+  {
+    name: "Jacques",
+    pronome: "Consultora",
+    phone: "+5581971208800",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Jacques');",
+  },
+  {
+    name: "Flora",
+    pronome: "Consultora",
+    phone: "+5581997251099",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Flora');",
+  },
+  {
+    name: "Mateus",
+    pronome: "Consultor",
+    phone: "+5581993707571",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Mateus');",
+  },
+  {
+    name: "Bruno",
+    pronome: "Consultor",
+    phone: "+5581993539678",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bruno');",
+  },
+];
+
+// Embaralhe o array de contatos usando o método Fisher-Yates
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffleArray(contacts);
+
+// Selecione a tabela na página
+const table = document.getElementById("contacts-table");
+
+// Limpe as linhas existentes da tabela
+table.tBodies[0].innerHTML = "";
+
+// Adicione as linhas da tabela para cada contato embaralhado
+contacts.forEach((contact) => {
+  const row = table.tBodies[0].insertRow(-1);
+  row.classList.add("card");
+  const cell = row.insertCell(-1);
+  cell.classList.add("center-align");
+  const link = document.createElement("a");
+  link.href = `https://wa.me/${contact.phone}`;
+  link.target = "_blank";
+  link.onclick = () => {
+    eval(contact.onClick);
+  };
+  const text = document.createElement("h5");
+  text.classList.add("black-text");
+  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b> ${contact.pronome}  ${contact.name}</b>`;
+  link.appendChild(text);
+  cell.appendChild(link);
+});
+
+
+    </script>
 </body>
 </html>
