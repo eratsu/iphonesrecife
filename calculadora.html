@@ -8,6 +8,8 @@
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+
+
     <link rel="icon" href="images/icon_apple.png">
 
     <title>@IphonesRecifeOficial - Simulador de Crédito</title>
@@ -27,12 +29,12 @@
                 <div class="row">
                     <div class="input-field col l12 s12 m12 xl12">
                         <b>Valor da compra</b>
-                        <input placeholder="R$ 0,00" id="val_compra" type="text" class="validate">
+                        <input placeholder="R$ 0,00 (digite somente números)" id="val_compra" type="number" class="validate" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                     </div>
 
                     <div class="input-field col l12 s12 m12 xl12">
                         <b>Entrada em dinheiro</b>
-                        <input placeholder="R$ 0,00" id="val_entrada" type="text" class="validate">
+                        <input placeholder="R$ 0,00 (digite somente números)" id="val_entrada" type="number" class="validate" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                     </div>
                 </div>
             </form>
@@ -60,5 +62,7 @@
     <script src="https://use.fontawesome.com/1155ed6c0a.js"></script>
 
     <script src="regra.js"></script>
+
+    
 </body>
 </html>
