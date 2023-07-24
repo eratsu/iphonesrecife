@@ -1,191 +1,699 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@IphonesRecifeOficial</title>
 
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="custom.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
-    <link rel="icon" href="images/icon_apple.png">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
 
-    <title>@IphonesRecifeOficial - Simulador de Crédito</title>
-    
-    <meta property="og:title" content="@IphonesRecifeOficial">
-    <meta property="og:site_name" content="Simulador de cartão de crédito">
-    <meta property="og:url" content="https://eratsu.github.io/iphonesrecife/">
-    <meta property="og:description" content="Simulador de cartão e fale conosco">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://eratsu.github.io/iphonesrecife/images/ogimg.png">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQBLK6JPC8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQBLK6JPC8');
-    </script>
-
-    <style>
-      tbody{display: grid; grid-gap: 10px;}
-      .card{display: flex; justify-content: center; align-items: center; margin: 0;}
-      .card-insta {margin-top: 10px !important; height: 55px;}
-      .card-fixo {margin-top: 30px !important; height: 55px;}
-    </style>
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
 </head>
-<body class="grey lighten-3">
 
-    <div class="container">
-      <div class="row">
-        <div class="col l12 s12 m12 xl12 center-align">
-            <a href="index.html"><img class="responsive-img align-center" src="images/logo.png" width="250" height="250"></a>
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+   <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <div class="header-alert-news">
+          <p>
+            A maior loja de iPhones de Recife
+          </p>
         </div>
-    </div>
-    </div>
 
-   <div class="container">
-    <div class="row">
-      <div class="col l4 push-l4 s12">
-        <h6 class="center-align"> <b> Simulador de cartão de crédito </b> </h6>
-        <h6 class="center-align">Veja quanto você vai pagar no cartão de crédito</h6>
-      </div>
-    </div>
-   </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col l12 s12 center-align">
-            <a class="waves-effect waves-light btn-large blue darken-1 flow-text card-simular" href="calculadora.html" onclick="ga('send', 'event', 'Botões', 'Clique', 'Calculadora');"> <i class="fa fa-credit-card" aria-hidden="true"></i>
-            Cliquei aqui para Simular
+        <ul class="header-social-container">
+
+          
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon> <span class="menu-mob-insta">Acesse nosso instagram</span>
             </a>
-        </div>
+          </li>
+
+        
+
+        </ul>
+
+        
+      </div>
+
     </div>
-    </div>
 
-    <hr />
+    <div class="header-main">
 
-    <div class="row">
-      <div class="col l4 push-l4 s12">
-        <h6 class="center-align"> <b> Clique e fale conosco </b> </h6>
-        <h6 class="center-align">Seg a Sex 9h às 18h e Sábado das 9h às 15h</h6>
-        <br />
+      <div class="container">
 
-
-        <table id="contacts-table">
-          <tbody>
-            <!-- Adicione as linhas da tabela aqui -->
-          </tbody>
-        </table>
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.png" alt="Iphone Recife logo" width="150" height="86">
+        </a>
 
 
-        <div class="card card-fixo">
-          <div class="center-align">
-            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Consultor Carlos</b> </h5> </a>
+        <nav class="desktop-navigation-menu">
+
+          <div class="container">
+    
+            <ul class="desktop-menu-category-list">
+    
+              <li class="menu-category">
+                <a href="index.html" class="menu-title">Início</a>
+              </li>
+    
+    
+              <li class="menu-category">
+                <a href="#" class="menu-title">Produtos</a>
+    
+                <ul class="dropdown-list">
+    
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="iphones">iPhones</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="ipads">iPads</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="airpods">AirPods</a>
+                  </li>
+    
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="macbooks">Macbooks</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="watchs">Apple Watchs</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#" class="category-link" data-category="outros">Outros</a>
+                  </li>
+    
+                </ul>
+              </li>
+    
+              
+    
+             
+              <li class="menu-category">
+                <a href="whatsapp.html" class="menu-title">Fale conosco</a>
+              </li>
+
+              
+              <li class="menu-category">
+                <a href="old/calculadora.html" class="menu-title">Simulador de parcelas</a>
+              </li>
+    
+              
+    
+            </ul>
+    
           </div>
-        </div>
+    
+        </nav>
 
-        <div class="card card-insta">
-          <div class="center-align">
-            <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Instagram');"> <h5 class="black-text"> <i class="fa fa-instagram" aria-hidden="true"></i> Voltar para @IphonesRecifeOficial </h5> </a>
+
+        <div class="mobile-bottom-navigation">
+
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+         
+    
+          <a href="index.html" class="action-btn">
+            <ion-icon name="home-outline"></ion-icon>
+          </a>
+    
+         
+    
+          <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="grid-outline"></ion-icon>
+          </button>
+    
+        </div>
+    
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+          <div class="menu-top">
+            <h2 class="menu-title">Menu</h2>
+    
+            <button class="menu-close-btn" data-mobile-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
           </div>
-        </div>
+    
+          <ul class="mobile-menu-category-list">
+    
+            <li class="menu-category">
+              <a href="index.html" class="menu-title">Início</a>
+            </li>
 
+            <li class="menu-category">
+              <a href="whatsapp.html" class="menu-title">Fale conosco</a>
+            </li>
+    
+            <li class="menu-category">
+              <a href="old/calculadora.html" class="menu-title">Simulador de parcelas</a>
+            </li>
+    
+          </ul>
+    
+          <div class="menu-bottom">
+    
+            
+    
+            <ul class="menu-social-container">
+    
+                 
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon> <span class="menu-mob-insta">Acesse nosso instagram</span>
+                </a>
+              </li>
+    
+                 
+            </ul>
+    
+          </div>
+    
+        </nav>
+
+        <!-- <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div> -->
 
       </div>
+
     </div>
 
-    <div class="row">
+    
+
+    
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">IMPERDÍVEL</p>
+
+              <h2 class="banner-title">Tenha seu iPhone hoje!</h2>
+
+              <p class="banner-text">
+                compre na maior loja de Recife
+              </p>
+
+              <a href="whatsapp.html" class="banner-btn">Falar com um consultor</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">IMPERDÍVEL</p>
+
+              <h2 class="banner-title">Tenha seu iPhone hoje!</h2>
+
+              <p class="banner-text">
+                compre na maior loja de Recife
+              </p>
+
+
+              <a href="whatsapp.html" class="banner-btn">Falar com um consultor</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">IMPERDÍVEL</p>
+
+              <h2 class="banner-title">Tenha seu iPhone hoje!</h2>
+
+              <p class="banner-text">
+                compre na maior loja de Recife
+              </p>
+
+
+              <a href="whatsapp.html" class="banner-btn">Falar com um consultor</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-        <!-- Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-     <!-- FontAwesome JavaScript -->
-    <script src="https://use.fontawesome.com/1155ed6c0a.js"></script>
-
-    <script>
-
-      // Crie um array com os objetos de contato
-const contacts = [
-  {
-    name: "Rayssa",
-    pronome: "Consultora",
-    phone: "+5581998788602",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Rayssa');",
-  },
-  {
-    name: "Jacques",
-    pronome: "Consultor",
-    phone: "+5581971208800",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Jacques');",
-  },
-  {
-    name: "Érika",
-    pronome: "Consultor",
-    phone: "+5581971201100",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Érika');",
-  },
-  // {
-  //   name: "Flora",
-  //   pronome: "Consultora",
-  //   phone: "+5581997251099",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Flora');",
-  // },
-  {
-    name: "Mateus",
-    pronome: "Consultor",
-    phone: "+5581993707571",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Mateus');",
-  },
-  {
-    name: "Bruno",
-    pronome: "Consultor",
-    phone: "+5581993539678",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bruno');",
-  },
-];
-
-// Embaralhe o array de contatos usando o método Fisher-Yates
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-shuffleArray(contacts);
-
-// Selecione a tabela na página
-const table = document.getElementById("contacts-table");
-
-// Limpe as linhas existentes da tabela
-table.tBodies[0].innerHTML = "";
-
-// Adicione as linhas da tabela para cada contato embaralhado
-contacts.forEach((contact) => {
-  const row = table.tBodies[0].insertRow(-1);
-  row.classList.add("card");
-  const cell = row.insertCell(-1);
-  cell.classList.add("center-align");
-  const link = document.createElement("a");
-  link.href = `https://wa.me/${contact.phone}`;
-  link.target = "_blank";
-  link.onclick = () => {
-    eval(contact.onClick);
-  };
-  const text = document.createElement("h5");
-  text.classList.add("black-text");
-  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b> ${contact.pronome}  ${contact.name}</b>`;
-  link.appendChild(text);
-  cell.appendChild(link);
-});
 
 
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Categoria</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="iphones">iPhones</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="ipads">iPads</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="airpods">AirPods</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="macbooks">Macbooks</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="watchs">Apple Watchs</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <a href="#" class="menu-title category-link" data-category="outros">Outros</a>
+                  </div>
+               
+                </button>
+               
+              </li>
+
+
+                         
+            </ul>
+
+          </div>
+
+          
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Produtos</h2>
+
+            <div class="product-grid">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="https://www.instagram.com/p/CqSrNpmukj6/?img_index=1" target="_blank">
+              <img src="./assets/images/outros/dica1.jpg" alt="Como usar 2 Chips no iPhone" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="https://www.instagram.com/p/CqSrNpmukj6/?img_index=1" target="_blank" class="blog-category">Dicas</a>
+
+              <a href="https://www.instagram.com/p/CqSrNpmukj6/?img_index=1" target="_blank">
+                <h3 class="blog-title">Como usar 2 Chips no iPhone</h3>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="https://www.instagram.com/p/Curl7kSrrtS/" target="_blank">
+              <img src="./assets/images/outros/dica2.png" alt="Automação de mensagem no whatsapp"
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="https://www.instagram.com/p/Curl7kSrrtS/" target="_blank" class="blog-category">Curiosidade</a>
+          
+              <h3>
+                <a href="https://www.instagram.com/p/Curl7kSrrtS/" target="_blank" class="blog-title">Automação de mensagem no whatsapp</a>
+              </h3>
+          
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="https://www.instagram.com/p/CtL4nEEM3KE/" target="_blank">
+              <img src="./assets/images/outros/dica3.png" alt="Lançamento do novo óculos da Apple"
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="https://www.instagram.com/p/CtL4nEEM3KE/" target="_blank" class="blog-category">Novidade</a>
+          
+              <h3>
+                <a href="https://www.instagram.com/p/CtL4nEEM3KE/" target="_blank" class="blog-title">Lançamento do novo óculos da Apple</a>
+              </h3>
+          
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="https://www.instagram.com/p/Csts4eHRfKj/?img_index=1" target="_blank">
+              <img src="./assets/images/outros/dica4.jpg" alt="Sabe a importância da AirTag?"
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="https://www.instagram.com/p/Csts4eHRfKj/?img_index=1" target="_blank" class="blog-category">Curiosidade</a>
+          
+              <h3>
+                <a href="https://www.instagram.com/p/Csts4eHRfKj/?img_index=1" target="_blank" class="blog-title">Sabe a importância da AirTag?</a>
+              </h3>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    
+
+    
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+
+        <p class="copyright">
+          iPhones Recife Oficial &copy; CNPJ 43.535.036/0001-82.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+  <script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+    // Array de links aleatórios
+    const linksAleatorios = [
+      'https://www.exemplo.com/produto1',
+      'https://www.exemplo.com/produto2',
+      'https://www.exemplo.com/produto3',
+      // Adicione quantos links você quiser
+    ];
+    
+    // Função para abrir um link aleatório em uma nova aba
+    function abrirLinkAleatorioEmNovaAba() {
+      const indexAleatorio = Math.floor(Math.random() * linksAleatorios.length);
+      const linkAleatorio = linksAleatorios[indexAleatorio];
+      window.open(linkAleatorio, '_blank');
+    }
+    
+    // Adicionar o ouvinte de evento de clique ao botão "Ver preço"
+    // const botaoVerPreco = document.getElementById('ver-preco-btn');
+    // botaoVerPreco.addEventListener('click', abrirLinkAleatorioEmNovaAba,false);
+
+    
+
+        const botaoVerPreco = document.getElementsByClassName('ver-whats-btn');
+
+        for (var i = 0; i < botaoVerPreco.length; i++) {
+          botaoVerPreco[i].addEventListener('click', abrirLinkAleatorioEmNovaAba);
+        }
+
+        
+    });
+
+    
+    // Resto do seu código JavaScript...
     </script>
+
+<script>
+  // Função para carregar os produtos da categoria específica
+  function loadProducts(category) {
+    // Realizar a requisição do arquivo JSON (assumindo que esteja no mesmo diretório)
+    fetch('produtos.json')
+      .then(response => response.json())
+      .then(data => {
+        const products = data[category];
+  
+        // Construir a estrutura HTML com os produtos da categoria selecionada
+        const productMain = document.querySelector('.product-grid');
+        productMain.innerHTML = ''; // Limpar o conteúdo existente
+  
+        products.forEach(product => {
+          const productHTML = `
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img src="${product.imagem}" alt="${product.categoria}" width="300" class="product-img default">
+                <img src="${product.imagem}" alt="${product.categoria}" width="300" class="product-img hover">
+              </div>
+              <div class="showcase-content">
+                <p class="showcase-category"><b>${product.categoria}</b></p>
+                <p><h3 class="showcase-title">${product.titulo}</h3></p>
+                <a href="whatsapp.html" class="buy-btn">Ver preço</a>
+              </div>
+            </div>
+          `;
+          productMain.insertAdjacentHTML('beforeend', productHTML);
+        });
+      })
+      .catch(error => console.error('Erro ao carregar os produtos:', error));
+  }
+  
+  // Adicionar o ouvinte de evento para os links de categorias
+  const categoryLinks = document.querySelectorAll('.category-link');
+  categoryLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const category = event.target.dataset.category;
+      loadProducts(category);
+    });
+  });
+  
+  // Carregar por padrão os produtos da categoria de iPhones
+  loadProducts('iphones');
+  </script>
+
+
+
+
+
 </body>
+
 </html>
