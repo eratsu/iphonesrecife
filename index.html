@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="custom.css">
+
+    <link rel="icon" href="images/icon_apple.png">
+
+    <title>@IphonesRecifeOficial - Simulador de Crédito</title>
+    
+    <meta property="og:title" content="@IphonesRecifeOficial">
+    <meta property="og:site_name" content="Simulador de cartão de crédito">
+    <meta property="og:url" content="https://eratsu.github.io/iphonesrecife/">
+    <meta property="og:description" content="Simulador de cartão e fale conosco">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eratsu.github.io/iphonesrecife/images/ogimg.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQBLK6JPC8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LQBLK6JPC8');
+    </script>
+
+    <style>
+      tbody{display: grid; grid-gap: 10px;}
+      .card{display: flex; justify-content: center; align-items: center; margin: 0;}
+      .card-insta {margin-top: 10px !important; height: 55px;}
+      .card-fixo {margin-top: 30px !important; height: 55px;}
+    </style>
+
+
+</head>
+<body class="grey lighten-3">
+
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 m12 xl12 center-align">
+            <a href="index.html"><img class="responsive-img align-center" src="images/logo.png" width="250" height="250"></a>
+        </div>
+    </div>
+    </div>
+
+   <div class="container">
+    <div class="row">
+      <div class="col l4 push-l4 s12">
+        <h6 class="center-align"> <b> Simulador de cartão de crédito </b> </h6>
+        <h6 class="center-align">Veja quanto você vai pagar no cartão de crédito</h6>
+      </div>
+    </div>
+   </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 center-align">
+            <a class="waves-effect waves-light btn-large blue darken-1 flow-text card-simular" href="calculadora.html" onclick="ga('send', 'event', 'Botões', 'Clique', 'Calculadora');"> <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Cliquei aqui para Simular
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col l4 push-l4 s12">
+        <h6 class="center-align"> <b> Clique e fale conosco </b> </h6>
+        <h6 class="center-align">Seg a Sex 9h às 18h e Sábado das 9h às 15h</h6>
+        <br />
+
+
+        <table id="contacts-table">
+          <tbody>
+            <!-- Adicione as linhas da tabela aqui -->
+          </tbody>
+        </table>
+
+
+        <div class="card card-fixo">
+          <div class="center-align">
+            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Carlos</b> </h5> </a>
+          </div>
+        </div>
+
+        <div class="card card-insta">
+          <div class="center-align">
+            <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Instagram');"> <h5 class="black-text"> <i class="fa fa-instagram" aria-hidden="true"></i> Voltar para @IphonesRecifeOficial </h5> </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+        <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <!-- FontAwesome JavaScript -->
+    <script src="https://use.fontawesome.com/1155ed6c0a.js"></script>
+
+    <script>
+
+      // Crie um array com os objetos de contato
+const contacts = [
+  {
+    name: "Rayssa",
+    pronome: "Consultora",
+    phone: "+5581998788602",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Rayssa');",
+  },
+  {
+    name: "Jacques",
+    pronome: "Consultor",
+    phone: "+5581971208800",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Jacques');",
+  },
+  {
+    name: "Érika",
+    pronome: "Consultor",
+    phone: "+5581971201100",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Érika');",
+  },
+  // {
+  //   name: "Flora",
+  //   pronome: "Consultora",
+  //   phone: "+5581997251099",
+  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Flora');",
+  // },
+  {
+    name: "Mateus",
+    pronome: "Consultor",
+    phone: "+5581993707571",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Mateus');",
+  },
+  {
+    name: "Clara",
+    pronome: "Consultor",
+    phone: "+5581997720797",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Clara');",
+  },
+  {
+    name: "Bruno",
+    pronome: "Consultor",
+    phone: "+5581993539678",
+    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bruno');",
+  },
+];
+
+// Embaralhe o array de contatos usando o método Fisher-Yates
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffleArray(contacts);
+
+// Selecione a tabela na página
+const table = document.getElementById("contacts-table");
+
+// Limpe as linhas existentes da tabela
+table.tBodies[0].innerHTML = "";
+
+// Adicione as linhas da tabela para cada contato embaralhado
+contacts.forEach((contact) => {
+  const row = table.tBodies[0].insertRow(-1);
+  row.classList.add("card");
+  const cell = row.insertCell(-1);
+  cell.classList.add("center-align");
+  const link = document.createElement("a");
+  link.href = `https://wa.me/${contact.phone}`;
+  link.target = "_blank";
+  link.onclick = () => {
+    eval(contact.onClick);
+  };
+  const text = document.createElement("h5");
+  text.classList.add("black-text");
+  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b>${contact.name}</b>`;
+  link.appendChild(text);
+  cell.appendChild(link);
+});
+
+
+    </script>
+</body>
+</html>
