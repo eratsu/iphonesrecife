@@ -86,7 +86,7 @@
 
         <div class="card card-fixo">
           <div class="center-align">
-            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Carlos</b> </h5> </a>
+            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Carlos - (81) 9 9695-3666</b> </h5> </a>
           </div>
         </div>
 
@@ -116,18 +116,21 @@ const contacts = [
     name: "Rayssa",
     pronome: "Consultora",
     phone: "+5581998788602",
+    mostrarfone: "(81) 9 9878-8602",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Rayssa');",
   },
   {
     name: "Jacques",
     pronome: "Consultor",
     phone: "+5581971208800",
+    mostrarfone: "(81) 9 7120-8800",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Jacques');",
   },
   {
     name: "Érika",
     pronome: "Consultor",
     phone: "+5581971201100",
+    mostrarfone: "(81) 9 7120-1100",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Érika');",
   },
   // {
@@ -140,18 +143,21 @@ const contacts = [
     name: "Mateus",
     pronome: "Consultor",
     phone: "+5581993707571",
+    mostrarfone: "(81) 9 9370-7571",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Mateus');",
   },
   {
     name: "Clara",
     pronome: "Consultor",
     phone: "+5581997720797",
+    mostrarfone: "(81) 9 9772-0797",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Clara');",
   },
   {
     name: "Bruno",
     pronome: "Consultor",
     phone: "+5581993539678",
+    mostrarfone: "(81) 9 9353-9678",
     onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bruno');",
   },
 ];
@@ -186,7 +192,7 @@ contacts.forEach((contact) => {
   };
   const text = document.createElement("h5");
   text.classList.add("black-text");
-  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b> ${contact.name}</b>`;
+  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b> ${contact.name} - ${contact.mostrarfone}</b>`;
   link.appendChild(text);
   cell.appendChild(link);
 });
