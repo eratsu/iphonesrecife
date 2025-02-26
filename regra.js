@@ -18,8 +18,8 @@ function calculo(val1, val2) {
     
     
 
-    let percentual = valor+(valor*(valor*taxas[i]/(valor-(valor*taxas[i]))))
-    valor_total.push(valor + percentual); //Populando os valores totais
+    let percentual = (taxas[i] * valor) / 100
+    valor_total.push(valor+(valor*(valor*percentual/(valor-(valor*percentual))))); //Populando os valores totais
     valor_parcelas.push((valor + percentual) / (i+1)); //Populando os valores das parcelas
     i++;
   }
