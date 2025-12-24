@@ -1,38 +1,305 @@
-.separar{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: block;
-    border: none;
+/* Modern Variables */
+:root {
+    --primary-color: #007aff;
+    --success-color: #34c759;
+    --text-color: #1d1d1f;
+    --text-secondary: #86868b;
+    --bg-color: #f5f5f7;
+    --card-bg: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.separar-big{
-    margin-top: 35px;
-    margin-bottom: 8px;
-    display: block;
-    border: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.card {border-radius: 10px;}
-td {border-radius: 10px;}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
 
-.card-simular{
-    display: block; font-weight: bold;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header / Logo */
+header {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.logo-img {
+    width: 180px;
+    height: auto;
+    border-radius: var(--radius-md);
+    /* removed explicit round border unless desired, but apple style usually is clean */
+}
+
+/* Hero Text */
+.hero-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+/* Main Actions */
+.main-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 12px;
-    -webkit-box-shadow: 0 0 20px 0 #22972e;
-    box-shadow: 0 0 20px 0 #22972e;
+    gap: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 16px 24px;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
 }
 
-h5{
-    margin: 0.1rem 0 0.1rem 0;
-    font-size: 1.34rem;
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 122, 255, 0.3);
 }
 
-.card-insta {background: linear-gradient(84.92deg, #FFC900 0%, #FF6711 30.51%, #FF1855 71.88%, #D300C5 100%);}
-.card-insta h5{color: #fff !important;}
+/* Info Section */
+.info-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+}
 
-.blue.darken-1 {
-    background-color: #22972e !important;
+.info-card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.opening-hours {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.compact-hours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.compact-hours .divider {
+    color: #d1d1d6;
+}
+
+/* Contacts List */
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.contact-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e8f5e9;
+    color: var(--success-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box .name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info-box .phone {
+    font-size: 14px;
+    color: #fff;
+}
+
+.action-icon {
+    color: #d1d1d6;
+}
+
+/* Fixed Cards (Assistência, etc) */
+.secondary-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-gradient .contact-link {
+    color: white;
+}
+
+.card-gradient .icon-box {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.card-gradient .info-box .phone {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-gradient .action-icon {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card-instagram {
+    background: linear-gradient(84.92deg, #FFC900 0%, #FF6711 30.51%, #FF1855 71.88%, #D300C5 100%);
+}
+
+.card-instagram .contact-link {
+    color: white;
+}
+
+.card-instagram .icon-box {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+    }
+
+    70% {
+        transform: scale(1.03);
+        box-shadow: 0 0 0 10px rgba(52, 199, 89, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(52, 199, 89, 0);
+    }
+}
+
+.card-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 2px solid #fff;
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: pulse 2s infinite;
+}
+
+.card-highlight:hover {
+    animation: none;
+    transform: scale(1.05);
+}
+
+.card-highlight .contact-link {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card-highlight .icon-box {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+}
+
+.card-highlight .info-box .name {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
 }

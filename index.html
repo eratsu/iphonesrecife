@@ -1,240 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <title>@IphonesRecifeOficial - Simulador e Contato</title>
 
-    <link rel="icon" href="images/icon_apple.png">
-
-    <title>@IphonesRecifeOficial - Simulador de Crédito</title>
-    
+    <!-- Meta Tags -->
     <meta property="og:title" content="@IphonesRecifeOficial">
     <meta property="og:site_name" content="Fale com vendedor">
     <meta property="og:url" content="https://www.iphonesrecifeoficial.com.br">
-    <meta property="og:description" content="Fale com vendedor">
+    <meta property="og:description" content="Simulação de crédito e atendimento personalizado.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.iphonesrecifeoficial.com.br/iphonesrecife/images/ogimg.png">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQBLK6JPC8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <link rel="icon" href="images/icon_apple.png">
 
-      gtag('config', 'G-LQBLK6JPC8');
-    </script>
+    <!-- Fonts via Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-      tbody{display: grid; grid-gap: 10px;}
-      .card{display: flex; justify-content: center; align-items: center; margin: 0;}
-      .card-insta {margin-top: 10px !important; height: 55px;}
-      .card-fixo {margin-top: 30px !important; height: 55px;}
-        .card-fixo2 {margin-top: 10px !important; height: 55px;}
-      .fa-whatsapp{color: #22972e;}
-    </style>
-
-
-</head>
-<body class="grey lighten-3">
-
-    <div class="container">
-      <div class="row">
-        <div class="col l12 s12 m12 xl12 center-align">
-            <a href="index.html"><img class="responsive-img align-center" src="images/logo.png" width="250" height="250"></a>
-        </div>
-    </div>
-    </div>
-
-   <div class="container">
-    <div class="row">
-      <div class="col l4 push-l4 s12">
-        <h6 class="center-align"> <b> Simulador de cartão de crédito </b> </h6>
-        <h6 class="center-align">Veja quanto você vai pagar no cartão de crédito</h6>
-      </div>
-    </div>
-   </div> 
-
-    <div class="container">
-      <div class="row">
-        <div class="col l12 s12 center-align">
-            <a class="waves-effect waves-light btn-large blue darken-1 flow-text card-simular" href="calcular.html" onclick="ga('send', 'event', 'Botões', 'Clique', 'Calculadora');"> <i class="fa fa-credit-card" aria-hidden="true"></i>
-            SIMULE SUA COMPRA NO CARTÃO!
-            </a>
-        </div>
-    </div>
-    </div>
-
-    <hr />
-
-    <div class="row">
-      <div class="col l4 push-l4 s12">
-          <h6 class="center-align"><b>Horário de funcionamento:</b><br>Seg a Sex - 9h às 19h <br> Sábado - 9h às 17h <br> Domingo - 12h às 16h</h6><br />
-        <h6 class="center-align"> <b> Clique e fale conosco </b> </h6>
-<!--         <h6 class="center-align">Seg a Sex 9h às 19h - Sábado das 9h às 17h - Domingo das 12h às 16h</h6> -->
-        <br />
-
-
-        <table id="contacts-table">
-          <tbody>
-            <!-- Adicione as linhas da tabela aqui -->
-          </tbody>
-        </table>
-
-         
-
-        <div class="card card-fixo" style="margin-top:10px !important;">
-          <div class="center-align">
-            <a href="https://wa.me/+5581996953666" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Carlos');"> <h5 class="black-text"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <b>Carlos (Siri) - (81) 9 9695-3666</b> </h5> </a>
-          </div>
-        </div>
-
-        <div class="card card-fixo2" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff !important; display:none;">
-          <div class="center-align">
-            <a href="https://bit.ly/iPeOFICIALatendimento1" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Assistencia');" style="color: #fff !important;"> <h5 class="black-text" style="color: #fff !important;"><b>PRÉ ANÁLISE - BOLETO</b> </h5> </a>
-          </div>
-        </div> 
-
-         <div class="card card-fixo2" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff !important;">
-          <div class="center-align">
-            <a href="https://bit.ly/iPeOFICIALatendimento1" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Assistencia');" style="color: #fff !important;"> <h5 class="black-text" style="color: #fff !important;"><b>ANÁLISE COMPRA NO BOLETO</b> </h5> </a>
-          </div>
-        </div> 
-
-        <div class="card card-fixo2" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff !important;">
-          <div class="center-align">
-            <a href="https://wa.me/+5581998019987" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Assistencia');" style="color: #fff !important;"> <h5 class="black-text" style="color: #fff !important;"> <i class="fa fa-wrench" aria-hidden="true"></i> <b>Assistência técnica</b> </h5> </a>
-          </div>
-        </div> 
-
-        <div class="card card-insta">
-          <div class="center-align">
-            <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" onclick="ga('send', 'event', 'Botões', 'Clique', 'Instagram');"> <h5 class="black-text"> <i class="fa fa-instagram" aria-hidden="true"></i> Voltar para @IphonesRecifeOficial </h5> </a>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="row">
-    </div>
-        <!-- Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-     <!-- FontAwesome JavaScript -->
+    <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/1155ed6c0a.js"></script>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQBLK6JPC8"></script>
     <script>
-
-      // Crie um array com os objetos de contato
-const contacts = [
-  // {
-  //   name: "Érika",
-  //   pronome: "Consultora",
-  //   phone: "+5581998788602",
-  //   mostrarfone: "(81) 9 9878-8602",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Erika');",
-  // },
-  // {
-  //   name: "Jacques",
-  //   pronome: "Consultor",
-  //   phone: "+5581971208800",
-  //   mostrarfone: "(81) 9 7120-8800",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Jacques');",
-  // },
-  // {
-  //   name: "Tarcis",
-  //   pronome: "Consultor",
-  //   phone: "+5581971201100",
-  //   mostrarfone: "(81) 9 7120-1100",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Tarcis');",
-  // },
-    // {
-    //   name: "Mirtes",
-    //   pronome: "Consultora",
-    //   phone: "+5581993707571",
-    //   mostrarfone: "(81) 9 9370-7571",
-    //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Mateus');",
-    // },
-  // {
-  //   name: "Flora",
-  //   pronome: "Consultora",
-  //   phone: "+558197251099",
-  //   mostrarfone: "(81) 9 9725-1099",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Flora');",
-  // },
-  {
-    name: "Rayssa",
-    pronome: "Consultora",
-    phone: "+5581998788602",
-    mostrarfone: " (81) 9 9878-8602",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Rayssa');",
-  },
-  {
-    name: "Bruno",
-    pronome: "Consultor",
-    phone: "+5581993539678",
-    mostrarfone: "(81) 9 9353-9678",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bruno');",
-  },
-    {
-    name: "Etoo",
-    pronome: "Consultor",
-    phone: "+5581971201100",
-    mostrarfone: "(81) 9 7120-1100",
-    onClick: "ga('send', 'event', 'Botões', 'Clique', 'Etoo');",
-  },
-  //   {
-  //   name: "Bianca",
-  //   pronome: "Consultora",
-  //   phone: "+558171208800",
-  //   mostrarfone: "(81) 7120-8800",
-  //   onClick: "ga('send', 'event', 'Botões', 'Clique', 'Bianca');",
-  // },
-];
-
-// Embaralhe o array de contatos usando o método Fisher-Yates
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-shuffleArray(contacts);
-
-// Selecione a tabela na página
-const table = document.getElementById("contacts-table");
-
-// Limpe as linhas existentes da tabela
-table.tBodies[0].innerHTML = "";
-
-// Adicione as linhas da tabela para cada contato embaralhado
-contacts.forEach((contact) => {
-  const row = table.tBodies[0].insertRow(-1);
-  row.classList.add("card");
-  const cell = row.insertCell(-1);
-  cell.classList.add("center-align");
-  const link = document.createElement("a");
-  link.href = `https://wa.me/${contact.phone}`;
-  link.target = "_blank";
-  link.onclick = () => {
-    eval(contact.onClick);
-  };
-  const text = document.createElement("h5");
-  text.classList.add("black-text");
-  text.innerHTML = `<i class="fa fa-whatsapp" aria-hidden="true"></i><b> ${contact.name} - ${contact.mostrarfone}</b>`;
-  link.appendChild(text);
-  cell.appendChild(link);
-});
-
-
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LQBLK6JPC8');
     </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="fade-in">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Iphones Recife" class="logo-img">
+            </a>
+        </header>
+
+        <section class="hero-text fade-in" style="animation-delay: 0.1s;">
+            <h1>Simulador de Crédito</h1>
+            <p>Veja quanto você vai pagar no cartão com nossas taxas reduzidas.</p>
+        </section>
+
+        <section class="main-actions fade-in" style="animation-delay: 0.2s;">
+            <a href="calcular.html" class="btn-primary"
+                onclick="gtag('event', 'click', {'event_category': 'Botões', 'event_label': 'Calculadora'});">
+                <i class="fa fa-credit-card"></i>
+                SIMULE SUA COMPRA
+            </a>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="info-card fade-in" style="animation-delay: 0.3s; padding: 16px;">
+            <h2 style="font-size: 16px; margin-bottom: 8px;">Horário de Funcionamento</h2>
+            <div class="opening-hours compact-hours">
+                <span>Seg a Sex: <strong>9h-19h</strong></span>
+                <span class="divider">•</span>
+                <span>Sáb: <strong>9h-17h</strong></span>
+                <span class="divider">•</span>
+                <span>Dom: <strong>12h-16h</strong></span>
+            </div>
+        </section>
+
+        <section class="contacts-section fade-in" style="animation-delay: 0.4s;">
+            <h2 class="section-title">Fale com um Consultor</h2>
+            <div id="contacts-container" class="contacts-list">
+                <!-- Javascript will populate this -->
+            </div>
+        </section>
+
+        <section class="secondary-actions fade-in" style="animation-delay: 0.5s;">
+
+            <!-- Carlos Fixo -->
+            <div class="contact-card">
+                <a href="https://wa.me/+5581996953666" target="_blank" class="contact-link"
+                    onclick="gtag('event', 'click', {'event_category': 'Botões', 'event_label': 'Carlos'});">
+                    <div class="icon-box">
+                        <i class="fa fa-whatsapp"></i>
+                    </div>
+                    <div class="info-box">
+                        <span class="name">Carlos (Siri)</span>
+                        <span class="phone" style="color: #000;">(81) 9 9695-3666</span>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Boleto (Hidden in original, keeping consistent but removing visibility hidden for code clarity unless requested) -> Original had display:none on one and display:block on others with similar content. I will only add the visible ones. -->
+
+            <!-- Análise Boleto -->
+            <div class="contact-card card-gradient">
+                <a href="https://bit.ly/iPeOFICIALatendimento1" target="_blank" class="contact-link"
+                    onclick="gtag('event', 'click', {'event_category': 'Botões', 'event_label': 'Assistencia'});">
+                    <div class="icon-box">
+                        <i class="fa fa-barcode"></i>
+                    </div>
+                    <div class="info-box">
+                        <span class="name">ANÁLISE COMPRA NO BOLETO</span>
+                        <span class="phone">Atendimento Seg a Sexta - 10h às 16h</span>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Assistência Técnica -->
+            <div class="contact-card card-highlight">
+                <a href="https://wa.me/+5581998019987" target="_blank" class="contact-link"
+                    onclick="gtag('event', 'click', {'event_category': 'Botões', 'event_label': 'Assistencia'});">
+                    <div class="icon-box">
+                        <i class="fa fa-wrench"></i>
+                    </div>
+                    <div class="info-box">
+                        <span class="name">Assistência Técnica</span>
+                        <span class="phone">Clique para agendar</span>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-card card-instagram">
+                <a href="https://www.instagram.com/iphonesrecifeoficial/" target="_blank" class="contact-link"
+                    onclick="gtag('event', 'click', {'event_category': 'Botões', 'event_label': 'Instagram'});">
+                    <div class="icon-box">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="info-box">
+                        <span class="name">@IphonesRecifeOficial</span>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <footer
+            style="margin-top: 40px; text-align: center; color: var(--text-secondary); font-size: 12px; padding-bottom: 20px;">
+            <p>&copy; Iphones Recife Oficial</p>
+        </footer>
+
+    </div>
+
+    <!-- Logic Script -->
+    <script src="scripts.js"></script>
 </body>
+
 </html>
