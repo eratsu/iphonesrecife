@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="info-box">
             <span class="name">${contact.name}</span>
-            <span class="phone" style="color: #000;">${contact.mostrarfone}</span>
+            <!-- <span class="phone" style="color: #000;">${contact.mostrarfone}</span> -->
         </div>
         <div class="action-icon">
             <i class="fa fa-chevron-right"></i>
