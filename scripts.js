@@ -23,13 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             onClick: "ga('send', 'event', 'Botões', 'Clique', 'Etoo');",
         },
         {
-            name: "Joyce",
-            pronome: "Consultora",
-            phone: "+5581997251099",
-            mostrarfone: "(81) 9 9725-1099",
-            onClick: "ga('send', 'event', 'Botões', 'Clique', 'Joyce');",
-        },
-        {
             name: "Carlos (Siri)",
             pronome: "Consultor",
             phone: "+447465733814",
