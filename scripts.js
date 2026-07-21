@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             phone: "+5581997251099",
             mostrarfone: "(81) 9 9725-1099",
             onClick: "ga('send', 'event', 'Botões', 'Clique', 'Joyce');",
+        },
+        {
+            name: "Carlos (Siri)",
+            pronome: "Consultor",
+            phone: "+447465733814",
+            mostrarfone: "+44 746 573 3814",
+            onClick: "ga('send', 'event', 'Botões', 'Clique', 'Siri');",
         }
     ];
 
