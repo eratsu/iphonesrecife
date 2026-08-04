@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: "Junior (Siri)",
             pronome: "Consultor",
-            phone: "+447465733814",
-            mostrarfone: "+44 746 573 3814",
+            phone: "+5581996953666",
+            mostrarfone: "(81) 9 9695-3666 ",
             onClick: "ga('send', 'event', 'Botões', 'Clique', 'Siri');",
         }
     ];
