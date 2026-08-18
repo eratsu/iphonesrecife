@@ -21,14 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             phone: "+5581971201100",
             mostrarfone: "(81) 9 7120-1100",
             onClick: "ga('send', 'event', 'Botões', 'Clique', 'Etoo');",
-        },
-        {
-            name: "Junior (Siri)",
-            pronome: "Consultor",
-            phone: "+5581996953666",
-            mostrarfone: "(81) 9 9695-3666 ",
-            onClick: "ga('send', 'event', 'Botões', 'Clique', 'Siri');",
         }
+       
     ];
 
     // Fisher-Yates Shuffle
