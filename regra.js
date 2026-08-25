@@ -7,7 +7,7 @@ function calculo(val1, val2) {
   var valor_parcelas = [];
   var valor_total = [];
 
-  var valor = (valor_compra + 50) - valor_entrada;
+  var valor = (valor_compra) - valor_entrada;
 
   //parte da taxa de débito
   let percentual_debito = (taxa_debito * valor) / 100;
